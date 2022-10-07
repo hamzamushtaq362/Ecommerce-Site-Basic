@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home || Starter</title>
+    <!-- normalize  -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <h1>comfy store starter</h1> -->
+
+     <!-- sidebar start -->
+     <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    
+        <i>
+            <p class="pfamily" style="color: black;font-size: 32px;text-align: center;margin-bottom: 22.5rem;">Your Bag</p>
+        </i>
+    
+        <i>
+            <p class="pfamily" style="color: black;font-size: 32px;text-align: center;">Total is:$0.00</p>
+        </i>
+    
+        <!-- ADD TO CART -->
+        <a id="a7" href="" style="text-align: center;margin:auto">ADD TO CART</a>
+        <!-- ADD TO CART -->
+    </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "350px";
+          document.getElementById("productdes").style.opacity="0.5";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("productdes").style.opacity="1";
+        }
+        </script>
+        <!-- sidebar start -->
+
+    <div class="main" id="productdes">
+        <!-- main6 start -->
+        <div class="main6">
+            <!-- cont6 start -->
+            <div class="cont6">
+                <!-- nav start -->
+                <div class="nav">
+                    <div class="c1c1">
+                        <ul>
+                            <li class="li1"><a class="a4" href="http://127.0.0.1:5500/FInal%20Task/home.html">Home</a></li>
+                            <li class="li1"><a class="a4" href="http://127.0.0.1:5500/FInal%20Task/products.html"> Products</a></li>
+                            <li class="li1"><a class="a4" href="http://127.0.0.1:5500/FInal%20Task/about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="c1c1">
+                        <img src="./logo/logo-black.svg" alt="" class="comfy">
+                    </div>
+                    <div class="c1c3">
+                        <i class="fas fa-shopping-cart" style="font-size: 32px;
+                        color: black;
+                        padding: 30px 0px;" onclick="openNav()"></i>
+                        <p class="order1">1</p>
+                    </div>
+                </div>
+                <!-- nav end -->
+
+            </div>
+            <!-- cont6 end -->
+        </div>
+        <!-- main6 end -->
+
+        <!-- main7 start -->
+        <div class="main7">
+            <!-- cont7 start -->
+            <div class="cont7">
+                <h3>Home / Products</h3>
+
+            </div>
+            <!-- cont7 end -->
+        </div>
+        <!-- main7 end -->
+
+        <!-- main9 start -->
+        <div class="main9">
+            <!-- cont9 start -->
+            <div class="cont9">
+                <div class="c9d1">
+                    <div class="ph3" style="background-image: url(./logo/1.jpg);">
+                        <div class="logo1">
+                            <a class="a3" href=""><i class="fas fa-search"></i></a>
+                            <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="c9d2">
+                <!-- High Black -->
+                <h2>High Black Bench</h2>
+                <!-- High Black -->
+
+                <i><p class="pfamily" style="color: #d5dfe7;">Ikea</p></i>
+                <p>$ 9.99</p>
+
+                <p style="padding: 0px 8px;
+                background-color: red;color:red;border-radius: 10px;display: inline;">.</p>
+
+                <p style="padding: 0px 8px;
+                background-color: black;color:black;border-radius: 10px;display: inline;">.</p>
+
+                <!-- paragraph -->
+                <p style="font-size: 14px;margin-top: 15px;margin-bottom: 25px;margin-right: 90px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, delectus cumque tempore minus sunt porro? Magnam nihil numquam architecto perferendis, praesentium, corrupti blanditiis, non illum est delectus facilis necessitatibus harum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ex assumenda reprehenderit fuga quisquam quaerat earum dicta vitae dolor, minus, quidem quia suscipit voluptatibus incidunt, esse ab temporibus sapiente excepturi.</p>
+                <!-- paragraph end-->
+
+                <!-- ADD TO CART -->
+                <a id="a5" href="">ADD TO CART</a>
+                <!-- ADD TO CART -->
+                </div>
+
+            </div>
+            <!-- cont9 end -->
+        </div>
+        <!-- main9 end -->
+    </div>
+  </body>
+</html>

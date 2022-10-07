@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home || Starter</title>
+    <!-- normalize  -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <h1>comfy store starter</h1> -->
+
+    <!-- sidebar start -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    
+        <i>
+            <p class="pfamily" style="color: black;font-size: 32px;text-align: center;margin-bottom: 22.5rem;">Your Bag</p>
+        </i>
+    
+        <i>
+            <p class="pfamily" style="color: black;font-size: 32px;text-align: center;">Total is:$0.00</p>
+        </i>
+    
+        <!-- ADD TO CART -->
+        <a id="a7" href="" style="text-align: center;margin:auto">ADD TO CART</a>
+        <!-- ADD TO CART -->
+    </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "350px";
+          document.getElementById("home").style.opacity="0.5";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("home").style.opacity="1";
+        }
+        </script>
+        <!-- sidebar start -->
+
+    <div class="main" id="home">
+        <!-- main1 start -->
+        <div class="main1">
+            <!-- cont1 start -->
+            <div class="cont1">
+                <!-- nav start -->
+                <div class="nav">
+                    <div class="c1c1">
+                        <ul>
+                            <li class="li0"><a href="http://127.0.0.1:5500/FInal%20Task/home.html">Home</a></li>
+                            <li class="li0"><a href="http://127.0.0.1:5500/FInal%20Task/products.html"> Products</a></li>
+                            <li class="li0"><a href="http://127.0.0.1:5500/FInal%20Task/about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="c1c1">
+                        <img src="./logo/logo-white.svg" alt="" class="comfy">
+                    </div>
+                    <div class="c1c3">
+                        <!-- <button onclick="incrementValue()" style="background: none;border:none"><i class="fas fa-shopping-cart" style="font-size: 32px;
+                            color:white;
+                            padding: 20px 0px;"></i></button> -->
+
+                        <!-- <input type="text" id="number" value="10" style="height: 35px;
+                            width: 35px;color: black;background-color: #DA8252;  position: relative;bottom: 25%;right: 4%;border: none;
+                            border-radius: 20px;padding: 0px 10px;" > -->
+                        
+                        <i class="fas fa-shopping-cart" style="font-size: 32px;
+                        color:white;
+                        padding: 20px 0px;" onclick="openNav()"></i>
+                        <p class="order1" >1</p>
+                            
+                        <script>
+                            function incrementValue() {
+                                var value = parseInt(document.getElementById('number').value, 10);
+                                value = isNaN(value) ? 0 : value;
+                                value++;
+                                document.getElementById('number').value = ""+ value;
+                            }
+                        </script>
+                    </div>
+                </div>
+                <!-- nav end -->
+
+                <!-- maintext start -->
+                <div class="maintext">
+                    <h1>Rest, Relax, Unwind</h1>
+                    <h3>Embrace your choices - we do</h3>
+                    <a href="" style="border: 1px solid white;padding: 10px;border-radius: 5px;" id="a1">SHOW NOW</a>
+                </div>
+                <!-- maintext start -->
+
+            </div>
+            <!-- cont1 end -->
+        </div>
+        <!-- main1 start -->
+
+        <!-- main2 start -->
+        <div class="main2">
+            <!-- cont2 start -->
+            <div class="cont2">
+                <!-- featured -->
+                <h2><span style="color: #DA8252;">/</span> Featured</h2>
+                <!-- featured -->
+
+                <!-- pic start -->
+                <div class="picdiv">
+
+                    <!-- picchild start -->
+                    <div class="picchild">
+                        <div class="ph1" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href=""><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">High-Back Bench</p>
+                        <p style="color: #617D98">Product Company : Ikea</p>
+                        <b>
+                            <p>$9.99</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild">
+                        <div class="ph1" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href=""><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Utopia Sofa</p>
+                        <p style="color: #617D98">Product Company : Marcos</p>
+                        <b>
+                            <p>$39.95</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild">
+                        <div class="ph1" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href=""><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Entertainment Center</p>
+                        <p style="color: #617D98">Product Company : Liddy</p>
+                        <b>
+                            <p>$29.98</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+                </div>
+                <!-- pic end -->
+
+                <!-- all products -->
+                <a id="a2" href="">ALL PRODUCTS</a>
+                <!-- all products -->
+            </div>
+            <!-- cont2 end -->
+        </div>
+        <!-- main2 end -->
+    </div>
+  </body>
+</html>

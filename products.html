@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products || Starter</title>
+    <!-- normalize  -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <h1>comfy store starter</h1> -->
+
+    <!-- sidebar start -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    
+        <i>
+            <p class="pfamily" style="color: black;font-size: 32px;text-align: center;margin-bottom: 22.5rem;">Your Bag</p>
+        </i>
+    
+        <i>
+            <p class="pfamily" style="color: black;font-size: 32px;text-align: center;">Total is:$0.00</p>
+        </i>
+    
+        <!-- ADD TO CART -->
+        <a id="a7" href="" style="text-align: center;margin:auto">ADD TO CART</a>
+        <!-- ADD TO CART -->
+    </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "350px";
+          document.getElementById("product").style.opacity="0.5";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("product").style.opacity="1";
+        }
+        </script>
+        <!-- sidebar start -->
+
+    <div class="main" id="product">
+        <!-- main3 start -->
+        <div class="main3">
+            <!-- cont3 start -->
+            <div class="cont3">
+                <!-- nav start -->
+                <div class="nav">
+                    <div class="c1c1">
+                        <ul>
+                            <li class="li1"><a class="a4" href="http://127.0.0.1:5500/FInal%20Task/home.html">Home</a></li>
+                            <li class="li1"><a class="a4" href="http://127.0.0.1:5500/FInal%20Task/products.html"> Products</a></li>
+                            <li class="li1"><a class="a4" href="http://127.0.0.1:5500/FInal%20Task/about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="c1c1">
+                        <img src="./logo/logo-black.svg" alt="" class="comfy">
+                    </div>
+                    <div class="c1c3">
+                        <i class="fas fa-shopping-cart" style="font-size: 32px;
+                        color: black;
+                        padding: 30px 0px;" onclick="openNav()"></i>
+                        <p class="order1">1</p>
+                    </div>
+                </div>
+                <!-- nav end -->
+
+            </div>
+            <!-- cont3 end -->
+        </div>
+        <!-- main3 start -->
+
+        <!-- main4 start -->
+        <div class="main4">
+            <!-- cont4 start -->
+            <div class="cont4">
+                <h3>Home / Products</h3>
+
+            </div>
+            <!-- cont4 end -->
+        </div>
+        <!-- main4 start -->
+
+        <!-- main5 start -->
+        <div class="main5">
+            <!-- cont4 start -->
+            <div class="cont5">
+
+                <!-- c5d1 start -->
+                <div class="c5d1">
+
+                    <!-- input start -->
+                    <input type="text" class="input1" placeholder="Search...">
+                    <!-- input start -->
+
+                    <!-- list start -->
+                    <h4>Company</h4>
+                    <ul>
+                        <li class="li2"><a href="" class="a5">All</a></li>
+                        <li class="li2"><a href="" class="a5">Ikea</a></li>
+                        <li class="li2"><a href="" class="a5">Marcos</a></li>
+                        <li class="li2"><a href="" class="a5">Caressa</a></li>
+                        <li class="li2"><a href="" class="a5">Liddy</a></li>
+                    </ul>
+                    <!-- list start -->
+
+                    <!-- price range -->
+                    <p style="padding: 0;">Price</p>
+                    <input type="range" min="1" max="100" value="50" style="margin-left: 10px;width: 53%;" id="myRange">
+
+                    <p style="font-size: 14px;margin-top: 0;color: #617D98;">value is: <span id="demo"></span></p>
+
+                    <script>
+                        var slider = document.getElementById("myRange");
+                        var output = document.getElementById("demo");
+                        output.innerHTML = slider.value + "$";
+                        
+                        slider.oninput = function() {
+                          output.innerHTML = this.value + "$" ;
+                        }
+                        </script>
+                    <!-- price range -->
+
+                </div>
+                <!-- c5d1 end -->
+                
+                <!-- c5d2 start -->
+                <div class="c5d2">
+
+                <!-- pic start -->
+                <div class="picdiv">
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;;padding-top: 10px;">High-Back Bench</p>
+                        <p style="color: #617D98">Product Company : Ikea</p>
+                        <b>
+                            <p>$9.99</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Utopia Sofa</p>
+                        <p style="color: #617D98">Product Company : Marcos</p>
+                        <b>
+                            <p>$39.95</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Entertainment Center</p>
+                        <p style="color: #617D98">Product Company : Liddy</p>
+                        <b>
+                            <p>$29.98</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+                </div>
+                <!-- pic end -->
+
+                <!-- pic start -->
+                <div class="picdiv">
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">High-Back Bench</p>
+                        <p style="color: #617D98">Product Company : Ikea</p>
+                        <b>
+                            <p>$9.99</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Utopia Sofa</p>
+                        <p style="color: #617D98">Product Company : Marcos</p>
+                        <b>
+                            <p>$39.95</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Entertainment Center</p>
+                        <p style="color: #617D98">Product Company : Liddy</p>
+                        <b>
+                            <p>$29.98</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+                </div>
+                <!-- pic end -->
+
+                <!-- pic start -->
+                <div class="picdiv">
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">High-Back Bench</p>
+                        <p style="color: #617D98">Product Company : Ikea</p>
+                        <b>
+                            <p>$9.99</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Utopia Sofa</p>
+                        <p style="color: #617D98">Product Company : Marcos</p>
+                        <b>
+                            <p>$39.95</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Entertainment Center</p>
+                        <p style="color: #617D98">Product Company : Liddy</p>
+                        <b>
+                            <p>$29.98</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+                </div>
+                <!-- pic end -->
+
+                <!-- pic start -->
+                <div class="picdiv">
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">High-Back Bench</p>
+                        <p style="color: #617D98">Product Company : Ikea</p>
+                        <b>
+                            <p>$9.99</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Utopia Sofa</p>
+                        <p style="color: #617D98">Product Company : Marcos</p>
+                        <b>
+                            <p>$39.95</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+
+                    <!-- picchild start -->
+                    <div class="picchild2">
+                        <div class="ph2" style="background-image: url(./logo/1.jpg);">
+                            <div class="logo1">
+                                <a class="a3" href="http://127.0.0.1:5500/FInal%20Task/productDescription.html"><i class="fas fa-search"></i></a>
+                                <a class="a3" href=""><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+
+                        <p style="color: #617D98;padding-top: 10px;">Entertainment Center</p>
+                        <p style="color: #617D98">Product Company : Liddy</p>
+                        <b>
+                            <p>$29.98</p>
+                        </b>
+                    </div>
+                    <!-- picchild end -->
+                </div>
+                <!-- pic end -->
+
+                </div>
+                <!-- c5d2 start -->
+            </div>
+            <!-- cont5 end -->
+        </div>
+        <!-- main5 start -->
+    </div>
+  </body>
+</html>
